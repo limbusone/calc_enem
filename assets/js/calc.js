@@ -1,5 +1,6 @@
 $().ready(function(){
-    $("#form_calc").validate({
+    $("#form_calc").validate
+    ({
         rules: 
         {
             notach:
@@ -85,5 +86,8 @@ $().ready(function(){
             $("html, body").animate({scrollTop:$("#resultado").offset().top}, 800);
         }
     });
-
+    $("input").click(function () 
+    {
+        $(this).select();
+    });
 })

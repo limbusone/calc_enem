@@ -83,7 +83,7 @@ $().ready(function(){
             let notard = Number($("#notard").val());
             let media = (notach + notacn + notalc + notamt + notard) / 5;
             $("#resultado").text(media);
-            $("html, body").animate({scrollTop:$("#resultado").offset().top}, 800);
+            $("html, body").animate({scrollTop:$("#resultado-title").offset().top}, 800);
         }
     });
     $("input").click(function () 

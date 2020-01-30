@@ -82,12 +82,19 @@ $().ready(function(){
             let notamt = Number($("#notamt").val());
             let notard = Number($("#notard").val());
             let media = (notach + notacn + notalc + notamt + notard) / 5;
-            $("#resultado").text(media);
+            $("#resultado").val(media);
             $("html, body").animate({scrollTop:$("#resultado-title").offset().top}, 800);
         }
     });
     $("input").click(function () 
     {
         $(this).select();
+    });
+    $("#copyToClipboard").click(function ()
+    {
+        $("#resultado").select();
+        // $("#resultado").setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        alert("Conteúdo Copiado!");
     });
 })

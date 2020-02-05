@@ -55,28 +55,71 @@
 							<section class="post">
 								<h3>Nota obtida em cada área de conhecimento (0-1000):</h3>
 								<form method="post" id="form_calc" action="#">
-									<div class="fields">
-										<div class="field">
-											<label for="notach">Nota - Ciências Humanas</label>
-											<input type="number" min="0" max="1000" maxlength="4" name="notach" id="notach" />
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Disciplina</th>
+														<th>Nota</th>
+														<th>Peso</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Ciências Humanas</td>
+														<td>
+																<!-- <label for="notach">Nota - Ciências Humanas</label> -->
+																<input type="number" min="0" max="1000" maxlength="4" name="notach" id="notach" />
+														</td>
+														<td>
+																<!-- <label for="pesoch">Peso</label> -->
+																<input type="number" min="0" max="1000" maxlength="4" name="pesoch" id="pesoch" value="1" />
+														</td>
+													</tr>
+													<tr>
+														<td>Ciências da Natureza</td>
+														<td>
+																<!-- <label for="notacn">Nota - Ciência da Natureza</label> -->
+																<input type="number" min="0" max="1000" maxlength="4" name="notacn" id="notacn" />
+														</td>
+														<td>
+															<input type="number" min="0" max="1000" maxlength="4" name="pesocn" id="pesocn" value="1" />
+														</td>
+													</tr>
+													<tr>
+														<td>Linguagens e Códigos</td>
+														<td>
+																<!-- <label for="notalc">Nota - Linguagens e Códigos</label> -->
+																<input type="number" min="0" max="1000" maxlength="4" name="notalc" id="notalc" />
+														</td>
+														<td>
+															<input type="number" min="0" max="1000" maxlength="4" name="pesolc" id="pesolc" value="1" />
+														</td>
+													</tr>
+													<tr>
+														<td>Matemática</td>
+														<td>
+																<!-- <label for="notamt">Nota - Matemática</label> -->
+																<input type="number" min="0" max="1000" maxlength="4" name="notamt" id="notamt" />
+														</td>
+														<td>
+															<input type="number" min="0" max="1000" maxlength="4" name="pesomt" id="pesomt" value="1" />
+														</td>
+													</tr>
+													<tr>
+
+														<td>Redação</td>
+														<td>
+																<!-- <label for="notard">Nota - Redação</label> -->
+																<input type="number" min="0" max="1000" maxlength="4" name="notard" id="notard" />
+														</td>
+														<td>
+															<input type="number" min="0" max="1000" maxlength="4" name="pesord" id="pesord" value="1" />
+														</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
-										<div class="field">
-											<label for="notacn">Nota - Ciência da Natureza</label>
-											<input type="number" min="0" max="1000" maxlength="4" name="notacn" id="notacn" />
-										</div>
-										<div class="field">
-											<label for="notalc">Nota - Linguagens e Códigos</label>
-											<input type="number" min="0" max="1000" maxlength="4" name="notalc" id="notalc" />
-										</div>
-										<div class="field">
-											<label for="notamt">Nota - Matemática</label>
-											<input type="number" min="0" max="1000" maxlength="4" name="notamt" id="notamt" />
-										</div>
-										<div class="field">
-											<label for="notard">Nota - Redação</label>
-											<input type="number" min="0" max="1000" maxlength="4" name="notard" id="notard" />
-										</div>										
-									</div>
 									<ul class="actions stacked">
 										<li><input type="submit" class="button primary fit" value="Calcular" /></li>
 									</ul>

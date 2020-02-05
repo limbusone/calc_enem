@@ -77,11 +77,22 @@ $().ready(function(){
         submitHandler: function(form)
         {
             let notach = Number($("#notach").val());
+            let pesoch = Number($("#pesoch").val());
+            
             let notacn = Number($("#notacn").val());
+            let pesocn = Number($("#pesocn").val());
+
             let notalc = Number($("#notalc").val());
+            let pesolc = Number($("#pesolc").val());
+
             let notamt = Number($("#notamt").val());
+            let pesomt = Number($("#pesomt").val());
+
             let notard = Number($("#notard").val());
-            let media = (notach + notacn + notalc + notamt + notard) / 5;
+            let pesord = Number($("#pesord").val());
+
+            let somapesos = pesoch + pesocn + pesolc + pesomt + pesord;
+            let media = ((notach * pesoch) + (notacn * pesocn) + (notalc * pesolc) + (notamt * pesomt) + (notard * pesord)) / somapesos;
             $("#resultado").val(media);
             $("html, body").animate({scrollTop:$("#resultado-title").offset().top}, 800);
         }

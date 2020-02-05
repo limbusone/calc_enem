@@ -27,7 +27,33 @@ $().ready(function(){
             {
                 required: true,
                 maxlength: 4
+            },
+            pesoch:
+            {
+                required: true,
+                maxlength: 4
+            },
+            pesocn:
+            {
+                required: true,
+                maxlength: 4
+            },
+            pesolc:
+            {
+                required: true,
+                maxlength: 4
+            },
+            pesomt:
+            {
+                required: true,
+                maxlength: 4
+            },
+            pesord:
+            {
+                required: true,
+                maxlength: 4
             }
+
             
 
         },
@@ -72,7 +98,48 @@ $().ready(function(){
                 min: "Minimo 0",
                 max: "Máximo 1000",
                 number: "Somente números"
+            },
+            pesoch: 
+            {
+                required: "Requerido",
+                maxlength: "4 digitos no maximo",
+                min: "Minimo 1",
+                max: "Máximo 1000",
+                number: "Somente números"
+            },
+            pesocn: 
+            {
+                required: "Requerido",
+                maxlength: "4 digitos no maximo",
+                min: "Minimo 1",
+                max: "Máximo 1000",
+                number: "Somente números"
+            },
+            pesolc: 
+            {
+                required: "Requerido",
+                maxlength: "4 digitos no maximo",
+                min: "Minimo 1",
+                max: "Máximo 1000",
+                number: "Somente números"
+            },
+            pesomt: 
+            {
+                required: "Requerido",
+                maxlength: "4 digitos no maximo",
+                min: "Minimo 1",
+                max: "Máximo 1000",
+                number: "Somente números"
+            },
+            pesord: 
+            {
+                required: "Requerido",
+                maxlength: "4 digitos no maximo",
+                min: "Minimo 1",
+                max: "Máximo 1000",
+                number: "Somente números"
             }
+
         },
         submitHandler: function(form)
         {

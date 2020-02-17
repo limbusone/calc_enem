@@ -5,6 +5,11 @@
     border: 0;
 }
 
+.special-button
+{
+    background-color: orange;
+}
+
 .special-button:hover 
 {
     box-shadow: inset 0 0 0 2px wheat;
